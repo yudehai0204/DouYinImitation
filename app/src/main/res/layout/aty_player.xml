@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#33000000"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/sp_10"
+        android:padding="@dimen/dp_10"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_120"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="right"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@android:color/holo_red_light"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/mProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_player_anim"
+        />
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:background="@mipmap/img_exit"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dp_20"
+        />
+</FrameLayout>
